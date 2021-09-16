@@ -1,0 +1,40 @@
+body{
+	background-image:url(93583.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-size: contain;
+	font-family: tangiang;
+}
+
+.menu-bar{background-color: green; text-align: center;}
+.menu-bar ul{
+	display: inline-flex;
+	list-style: none;
+	color: #fff;
+}
+
+.menu-bar ul li{
+	width: 120px;
+	padding: 12px;
+	margin: 15px;
+}
+
+.menu-bar ul li a {text-decoration: none;color: #fff;}
+
+.menu-bar ul li:hover{background-color: lightgreen}
+
+.sub-menu{ display: none;}
+
+.menu-bar ul li:hover .sub-menu{
+	display: block;
+	position: absolute;
+	background-color: green;
+	margin-top: 15px;
+	margin-left: -15px;
+	
+}
+.menu-bar ul li:hover .sub-menu ul{
+	display: block;
+
+}
+
