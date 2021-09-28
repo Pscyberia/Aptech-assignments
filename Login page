@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<meta charset="utf-8">
+	<!-- <link rel="stylesheet" type="text/css" href="css/login-page.css"> -->
+	<style type="text/css">
+		/*body{background-image: url(93583.jpg);
+			background-attachment: fixed;
+			background-position: center;
+			background-size: contain;	
+		}*/
+		
+
+		form{
+			text-align: center;
+		}
+
+		.pass:invalid {background-color: rgb(253,175,175);}
+		.pass:valid {background-color: rgb(93,253,77);}
+	</style>
+</head>
+
+<body>
+	<form method="GET" action="welcome.html" target="_blank" id="form">
+		
+		<label>Username</label><br>
+		<input type="email" name="email" required="true" autofocus="true"><br>
+
+		<label>Password</label><br>
+		<input type="password" class="pass" minlength="8" required="true" title="Must have one uppercase,one lowercase,one number and a minimum of 8 characters" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#%&]).{8,}"><br>
+
+		<button type="login" class="default" name="Login">Login</button>
+		
+	</form>	
+
+</body>
+</html>
