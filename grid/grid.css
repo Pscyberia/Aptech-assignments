@@ -1,0 +1,12 @@
+*{margin: 0;}
+
+#grid{
+	display: grid;
+	grid-template-columns: auto auto auto auto auto;
+	grid-template-rows: 105px 105px 105px 105px 105px 110px;
+}
+#grid > div{
+	text-align: center;
+	font-weight: bolder;
+	text-transform: uppercase;
+}
